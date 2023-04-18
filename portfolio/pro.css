@@ -1,0 +1,598 @@
+*{
+    scroll-behavior: smooth;
+}
+
+.item1{
+    grid-area: item1;
+    font-size: 32px;
+    color: orange;
+    margin-left: 30px;
+    padding: 20px;
+
+
+}
+.item2{
+    grid-area: item2;
+    display: flex;
+    justify-content: center;
+}
+
+.item2 ul li{
+    display: inline-block;
+    /* text-align: left; */
+    margin: 5px;
+    padding: 5px;
+    transition: background 1s;
+
+    
+}
+.item2 ul li:hover{
+    border: 1px solid gray;
+    border-radius: 50px;
+    box-shadow: 
+    /* inset 0 0 25px white, */
+    inset 10px 0 40px white,
+    inset -10px 0 40px gray,
+    inset 10px 0 150px white,
+    inset -10px 0 150px gray,
+    /* 00 25px white, */
+    0px 0 40px white,
+    0px 0 40px grey;
+    opacity: 1;
+    
+
+}
+
+.item2 ul li a{
+    color: orange;
+    text-decoration: none;
+    font-size: 26px;
+    
+}
+.item3{
+    grid-area: item3;
+    font-size: 30px;
+   /* display: block; */
+   align-self: center;
+}
+.item3 a{
+   
+    /* margin: 10px; */
+    display: block;
+    padding: 5px;
+    /* height: 300px; */
+    /* width: 300px; */
+}
+.item3 a i{
+    border: 2px solid white ;
+    border-radius: 100px;
+color: black;
+padding: 5px; 
+   /* display: block; */
+   color: orange;
+
+}
+.item3  a i:hover{
+    background-color: white;
+    box-shadow: 
+    /* inset 0 0 25px white, */
+    inset 10px 0 40px white,
+    inset -10px 0 40px gray,
+    inset 10px 0 150px white,
+    inset -10px 0 150px gray,
+    /* 00 25px white, */
+    0px 0 40px white,
+    0px 0 40px grey;
+    opacity: 1;
+}
+
+
+.item4{
+    grid-area: item4;
+    align-self: center;
+
+}
+.item4 h1{
+    font-size: 35px;
+    
+    
+}
+span{
+    color: orange;
+}
+.item4 h2{
+    font-size: 27px;
+    color:  orange;
+    
+}
+.item4 p{
+    font-size: 18px;
+    
+}
+
+.item4 button{
+    border-radius: 100px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-size: 19px;
+    box-shadow: 3px 4px 6px gray;
+    transition: background 0.5s ;
+    
+}
+.item4 button:hover{
+    background: orange;
+    box-shadow: 
+    /* inset 0 0 25px white, */
+    inset 10px 0 40px orange,
+    inset -10px 0 40px gray,
+    inset 10px 0 150px orange,
+    inset -10px 0 150px gray,
+    /* 00 25px white, */
+    0px 0 40px orange,
+    0px 0 40px grey;
+    opacity: 1;
+    
+}
+
+
+.item5{
+    grid-area: item5;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.item5 img{
+  
+    border: 2px outset gray;
+   border-bottom: 5px outset gray;
+   border-radius: 50%;
+   box-shadow: 3px 4px 6px gray;
+   /* position: relative; */
+   top: 20px;
+   bottom: 100px; 
+      /* left: 200px;  */
+
+
+}
+.item6{
+    grid-area: item6;
+
+}
+
+
+.wrapper{
+     height: 100vh;
+     display: grid;
+     padding: 10px;
+     gap: 3px;
+     grid-template-rows: 1fr 2fr;
+     grid-template-columns: 1fr 2fr 3fr ;
+     grid-template-areas:
+     'item1 item6 item2'
+     'item3 item4 item5';
+
+}
+
+body{
+    background-color: rgb(1, 1, 33);
+    color: white;
+}
+
+.item7{
+    grid-area: item7;
+    align-self: flex-end;
+    color: orange;
+    font-size: 35px;
+  
+
+  }
+  .item7 p{
+    color: white;
+    font-size: 18px;
+  }
+  
+  .item8{
+    grid-area: item8;
+    font-size: 28px;
+    align-self:flex-end;
+    color: orange;
+    display: inline-block;
+    position: relative;
+
+   
+  }
+  .item8::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .item8:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+
+  .item9{
+    grid-area: item9;
+    font-size: 28px;
+    align-self: flex-end;
+    color: orange;
+    display: inline-block;
+    position: relative;
+
+   
+
+  }
+
+
+  .item9::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .item9:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+
+
+  .item10{
+    grid-area: item10;
+    font-size: 28px;
+    align-self: flex-end;
+    color: orange;
+    display: inline-block;
+    position: relative;
+  }
+
+
+  .item10::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .item10:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .item11{
+    grid-area: item11;
+    /* display: none; */
+  
+  }
+  .item11 ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+  
+  .item12{
+    grid-area: item12;
+   
+  }
+  .item12 ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+   .item13{
+    grid-area: item13;
+  
+   }
+   .item13 ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+
+   .wrapper2{
+    height: 100vh;
+    display: grid;
+    padding: 10px;
+    gap: 3px;
+    margin: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas:
+    'item7 item7 item6'
+    'item8 item9 item10'
+    'item11 item12 item13'; 
+
+}
+
+
+ .item14{
+    grid-area: item14;
+    align-self: center;
+    color: orange;
+    font-size: 35px;
+   
+   }
+.item15{
+    grid-area: item15;
+    background: grey;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s;
+    margin-right: 10px;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius:50px ;
+   }
+
+.item15:hover{
+    background: orange;
+   
+    
+}
+.item15 i{
+    font-size:50px ;
+    margin-bottom: 30px;
+    /* align-self: center; */
+}
+.item16{
+    grid-area: item16;
+    background: grey;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s ;
+    margin-right: 10px;
+   }
+
+.item16:hover{
+    background: orange;
+
+    
+}
+.item16 i{
+    font-size:50px ;
+    margin-bottom: 30px;
+    /* align-self: center; */
+}
+.item17{
+    grid-area: item17;
+    background: grey;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s;
+    margin-right: 10px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 50px;
+   }
+
+.item17:hover{
+    background: orange;
+   
+   
+}
+.item17 i{
+    font-size:50px ;
+    margin-bottom: 30px;
+    /* align-self: center; */
+}
+.item18{
+    grid-area: item18;
+    text-align: center;
+    display: inline-block;
+    background: gray;
+    transition: background 0.5s ;
+    /* color: white; */
+    margin-top: 20px;
+    border-radius: 50px;
+    /* width: 150px;
+    height: 20px; */
+/* margin-left: 250px; */
+padding:  14px 60px;
+margin: 100px 200px;
+
+
+}
+.item18 a{
+    color: white;
+    font-size: 18px;
+    text-decoration-line: none;
+    
+}
+.item18:hover{
+    background: orange;
+    box-shadow: 
+    /* inset 0 0 25px white, */
+    inset 10px 0 40px orange,
+    inset -10px 0 40px gray,
+    inset 10px 0 150px orange,
+    inset -10px 0 150px gray,
+    /* 00 25px white, */
+    0px 0 40px orange,
+    0px 0 40px grey;
+    opacity: 1;
+}
+
+.wrapper3{
+    height: 100vh;
+    display: grid;
+    padding: 10px;
+    gap: 3px;
+    margin: 10px;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas:
+    'item14 item14 item6'
+    'item15 item16 item17'
+    'item18 item18 item18'; 
+
+}
+
+
+.item19{
+    grid-area: item19;
+    display: inline-block;
+    align-self: center;
+    color: orange;
+    font-size: 35px;
+
+}
+.item19 p{
+    color: white;
+    font-size: 25px;
+}
+.item19 p i{
+    color: orange;
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 5px; 
+    /* margin-left: 70px; */
+}
+.item20{
+    grid-area: item20;
+    font-size: 30px;
+   /* display: block; */
+   align-self: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 250px;
+}
+.item20 a{
+   
+    /* margin: 10px; */
+    display: block;
+    padding: 5px;
+    /* height: 300px; */
+    /* width: 300px; */
+    color: white;
+    text-decoration-line: none;
+    margin:10px ;
+}
+
+.item20  a i{
+    border: 2px solid white;
+    border-radius: 100px;
+    color: black;
+   padding: 5px; 
+   /* display: block; */
+   color: orange;
+   /* transition: background 0.5s; */
+   margin-right: 10px;
+  
+}
+.item20 a{
+    font-size: 22px;
+}
+.item20  a i:hover{
+    background-color: white;
+    box-shadow: 
+    /* inset 0 0 25px white, */
+    inset 10px 0 40px white,
+    inset -10px 0 40px gray,
+    inset 10px 0 150px white,
+    inset -10px 0 150px gray,
+    /* 00 25px white, */
+    0px 0 40px white,
+    0px 0 40px grey;
+    opacity: 1;
+}
+.item21{
+    grid-area: item21;
+    display: inline-block;
+    align-self: center;
+    margin-top: 250px;
+    
+    
+}
+.item21 input ,textarea{
+    width: 50%;
+    border: 0;
+    outline: none;
+    background: white;
+    padding: 15px;
+    /* margin: 15px ; */
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+    margin: 50px 90px;
+    display: block;
+}
+.item21 button{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background 0.5s;
+    border-radius: 100px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-size: 19px;
+    box-shadow: 3px 4px 6px gray;
+    display: flex;
+    align-self: flex-end;
+    margin-left: 250px;
+
+}
+.item21 button:hover{
+    background: orange;
+    box-shadow: 
+    /* inset 0 0 25px white, */
+    inset 10px 0 40px orange,
+    inset -10px 0 40px gray,
+    inset 10px 0 150px orange,
+    inset -10px 0 150px gray,
+    /* 00 25px white, */
+    0px 0 40px orange,
+    0px 0 40px grey;
+    opacity: 1;
+   
+}
+.wrapper5{
+    height: 100vh;
+    display: grid;
+    padding: 10px;
+    gap: 3px;
+    margin: 10px;
+    /* margin-top: 10px; */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-areas:
+    'item19 item21 item21 '
+    'item19 item21 item21'
+    'item20 item20 item20'
+    ; 
+
+}
+
+
